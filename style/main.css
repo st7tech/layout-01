@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Mulish';
+    src: 
+        url('../fonts/Mulish-Bold.woff2') format('woff2'),
+        url('../fonts/Mulish-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: 
+        url('../fonts/Mulish-Light.woff2') format('woff2'),
+        url('../fonts/Mulish-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: 
+        url('../fonts/Mulish-Regular.woff2') format('woff2'),
+        url('../fonts/Mulish-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none; 
+    padding-left: 0;
+    margin: 0; 
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    padding-top: 56px;
+    padding-inline: 190px;
+
+    margin-bottom: 85px;
+}
+
+.header__container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    column-gap: 40px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #8f8a99;
+    font-size: 18px;
+
+}
+
+.header__link-active {
+    font-weight: 700;
+    color: black;
+}
+
+.hero {
+    position: relative;
+
+    margin-bottom: 190px;
+}
+
+.hero__container {
+    padding-inline: 190px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero__container::before {
+    content: "";
+    width: 131px;
+    height: 115px;
+
+    background-image: url("../icon/element.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top: 0;
+    left: -45px;
+}
+
+.hero__content {
+    max-width: 445px;
+}
+
+.hero__header {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.hero__description {
+    font-size: 21px;
+    font-weight: 300;
+    color: #8f8a99;
+
+    margin-bottom: 48px;
+}
+
+.hero__record-btn {
+    background-color: #458FF6;
+    color: #fff;
+
+    border-radius: 55px;
+    border: none;
+
+    padding: 16px 40px;
+}
