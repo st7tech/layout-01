@@ -135,6 +135,10 @@ body {
     padding: 16px 40px;
 }
 
+.services {
+    margin-bottom: 220px;
+}
+
 .services__container {
     padding-inline: 240px;
     position: relative;
@@ -154,7 +158,19 @@ body {
     pointer-events: none;
     z-index: -1;
 }
+.services__container::after {
+    content: "";
+    width: 131px;
+    height: 115px;
 
+    background-image: url("../icon/element.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top: 493px;
+    left: 1280px;
+}
 
 .services__text-content {
     max-width: 952px;
@@ -192,17 +208,18 @@ body {
 }
 
 .services__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
     gap: 35px;
     position: relative;
+    padding: 0;
     z-index: 10;
 
     margin-bottom: 70px;
 }
 
 .services__item {
-    max-width: 350px;
+    width: 100%;
     max-height: 354px;
     padding: 48px 38px;
     position: relative;
@@ -252,4 +269,118 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: #458FF6;
+}
+
+.provider {
+    margin-bottom: 230px;
+}
+
+.provider__container {
+    padding-inline: 190px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 137px;
+}
+
+.provider__content {
+    max-width: 486px;
+}
+
+.provider__header {
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+
+.provider__text-line {
+    display: block;
+    border-radius: 10px;
+    background-color: #000;
+    width: 56px;
+    height: 2px;
+    margin-bottom: 31px;
+}
+
+.provider__description {
+    font-size: 18px;
+    color: #8f8a99;
+    font-weight: 300;
+    margin-bottom: 38px;
+}
+
+.provider__btn {
+    background-color: transparent;
+
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
+
+    display: block;
+    padding: 19px 51px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #458FF6;
+}
+
+.mobile-app {
+    margin-bottom: 250px;
+}
+
+.mobile-app__container {
+    padding-inline: 190px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 137px;
+}
+
+.mobile-app__content {
+    max-width: 486px;
+}
+
+.mobile-app__header {
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+
+.mobile-app__line {
+    display: block;
+    border-radius: 10px;
+    background-color: #000;
+    width: 56px;
+    height: 2px;
+    margin-bottom: 31px;
+}
+
+.mobile-app__description {
+    font-size: 18px;
+    color: #8f8a99;
+    font-weight: 300;
+    margin-bottom: 38px;
+}
+
+.mobile-app__btn {
+    background-color: transparent;
+
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
+
+    display: block;
+    padding: 19px 51px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #458FF6;
+}
+
+.mobile-app__btn-icon {
+    display: inline-block;
+    background-image: url("../icon/download.svg");
+    width: 17px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size :contain;
+    margin-left: 5px;
 }
